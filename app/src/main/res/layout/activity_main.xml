@@ -28,7 +28,7 @@
             android:typeface="serif" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:layout_marginBottom="24dp"
@@ -37,7 +37,7 @@
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textPersonName"
-            android:labelFor="@id/editTextTextPassword"
+            android:labelFor="@id/password"
             android:textColor="@color/white"
             android:textColorHint="#EDDFDF"
             android:textSize="24sp"
@@ -54,7 +54,7 @@
             android:typeface="serif" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:background="@color/cardview_shadow_start_color"
@@ -90,14 +90,24 @@
         app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
     <LinearLayout
-        android:layout_width="351dp"
-        android:layout_height="108dp"
+        android:layout_width="413dp"
+        android:layout_height="112dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="1.0"></LinearLayout>
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/invalid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textColor="#870303"
+            android:textSize="34sp"
+            android:typeface="serif" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
